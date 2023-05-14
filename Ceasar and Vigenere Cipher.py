@@ -93,3 +93,30 @@ def ceasarCypher(message,key,encrypt) -> str: #Remember to remove message
             output = output + symbol ## If symbol is not recognised as a letter, it is unaltered
 
     return output
+
+
+##Erblini
+
+def decrypt():
+    cypher=mode.get()
+    if cypher == "ceasar":
+        key=int(ent_key.get())
+        message=txt_edit.get("1.0", tk.END)
+        translate=ceasarCypher(message, key, encrypt=False)
+        txt.edit.delete("1.0, tk.END")
+        txt_edit.insert(tk.END, translate)
+        if cypher == "vigenere":
+            phrase=str(ent_phrase.get())
+            message = txt_edit.get("1.0", tk.END)
+            translate = vigenereCypher(message, phrase, encrypt=False)
+            txt_edit.delete("1.0, tk.END")
+            txt_edit.insert=(tk.END, translate)
+
+def enable(ent):
+    ent.configure(state="normal")
+    ent.update()
+    def disable(ent):
+        ent.configure(state="disabled")
+        ent.update()
+
+        
