@@ -38,6 +38,13 @@ This is a simple text encrypter application built using the Tkinter library in P
 9. Click the "Decrypt" button to decrypt the encrypted text in the editor using the selected encryption method and parameters.
 10. The encrypted or decrypted text will be displayed in the text editor.
 
+## Authors
+ 
+ * Ardit Haklaj
+ * Arbnore Qorraj
+ * Erblin Gerbeshi
+ * Xhemajl Borovci 
+
 ## Additional Information
 
 - The Ceasar Cipher shifts each letter in the message by a certain number of positions in the alphabet based on the encryption key.
